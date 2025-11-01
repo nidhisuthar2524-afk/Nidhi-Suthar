@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nidhi Suthar | Full Stack Developer</title>
+  <style>
+    /* --- General Styling --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: linear-gradient(120deg, #89f7fe, #66a6ff);
+      color: #333;
+    }
+
+    /* --- Header --- */
+    header {
+      text-align: center;
+      padding: 70px 20px 40px;
+      color: white;
+      background: linear-gradient(120deg, #0077b6, #00b4d8, #90e0ef);
+      animation: bgFlow 8s infinite alternate;
+    }
+
+    @keyframes bgFlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+    }
+
+    /* --- Navbar --- */
+    nav {
+      background: #023e8a;
+      text-align: center;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    /* --- Sections --- */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 25px;
+    }
+
+    h2 {
+      color: #0077b6;
+      border-left: 5px solid #0077b6;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
+    /* --- Skills List --- */
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+    .skills li {
+      background: #e9f5ff;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .skills li:hover {
+      background: #caf0f8;
+    }
+
+    /* --- Projects Section --- */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+    .project-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .project-card h3 {
+      padding: 10px;
+      color: #0077b6;
+    }
+    .project-card p {
+      padding: 0 10px 15px;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    /* --- Contact Section --- */
+    .contact {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      nav a { display: inline-block; margin: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="image.jpegb " alt="Profile Photo">
+    <h1>Nidhi Suthar</h1>
+    <p>Full Stack Developer | Mumbai, India</p>
+    <p>| ✉️ nidhisuthar2524@gmail.com</p>
+    </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>To start my career as a Full Stack Developer where I can apply my knowledge of HTML, CSS, JavaScript, and responsive design to build engaging and user-friendly websites while continuously learning and growing in a professional environment.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Computer Application (BCA)</strong> - Kandivli Education Society's</li>
+      <li><strong>12th Commerce</strong> – St. Willibrord's High School</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React (Learning)</li>
+      <li>Teamwork & Communication</li>
+      <li>Photoshop & Canva</li>
+      <li>Time Management</li>
+      <li>Visual Studio Code</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://i.ibb.co/vLCcJKp/fruits.jpg" alt="Fruits Website">
+        <h3>Buy Fresh Fruits</h3>
+        <p>A responsive website to showcase fresh fruit products with categories and offers.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.ibb.co/zNsZfYf/banner.jpg" alt="Banner Animation">
+        <h3>Animated Banner</h3>
+        <p>Created a smooth animation banner using HTML and CSS transitions.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.ibb.co/tcfh2K1/forms.jpg" alt="Forms">
+        <h3>Interactive Forms</h3>
+        <p>Built modern HTML forms with validation and connected actions.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.ibb.co/kDf6c7h/chess.jpg" alt="Chess Board">
+        <h3>Chess Board Design</h3>
+        <p>Styled a chessboard layout using HTML tables and CSS grids.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:nidhisuthar2524@gmail.com">nidhisuthar2524@gmail.com</a></p>
+    
+    
+  </section>
+
+  <footer>
+    © 2025 Nidhi Suthar — Designed with ❤️ using HTML, CSS & JS
+  </footer>
+
+</body>
+</html>
